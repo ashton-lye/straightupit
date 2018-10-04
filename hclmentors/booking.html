@@ -1,6 +1,7 @@
 <DOCTYPE html>
     <head>
         <title>HCL Mentor Program Booking</title>
+        <link rel="stylesheet" href="css/booking.css">
     </head>
     <body onload="Javascript:loadLibraries()">
         <div id="header"></div>
@@ -22,6 +23,21 @@
             <input type="text" id="numberInput" placeholder="Phone Number">
             <p>Step 5: Enter a Brief Description of What you would like Help with: (Optional)</p>
             <textarea id="problemText" rows="5" cols="50" placeholder="Enter Description Here"></textarea>
+        </div>
+        <p>Once all your details have been entered, click 'Confirm Details' to confirm your details.</p>
+        <button id="submitbutton" onclick="Javascript:showConfirm()">Submit Details</button>
+
+        <!--Confirmation Popup-->
+        <div id="confirmBox" class="confirmBox">
+
+            <div class="confirmBoxContent">
+                <h3>Booking Confirmation</h3>
+                <p id="bookingDetails"></p>
+                <p>If these details are correct, click 'Book Session' to book your mentoring session. Otherwise, click 'Cancel' to go back and edit the details.</p>
+                <button id="bookButton" onclick="Javascript:bookSession()">Book Session</button>
+                <button id="cancelButton" onclick="Javascript:closeConfirm()">Cancel</button>
+            </div>
+            
         </div>
         <script src="js/scripts.js"></script>
         <script src="js/bookingscripts.js"></script>

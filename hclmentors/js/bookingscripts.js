@@ -1,5 +1,12 @@
 //scripts for booking page - ashton
 
+//declare client detail vars
+var selectedDate;
+var selectedLibrary;
+var selectedTime;
+var clientName;
+var clientNumber;
+
 //function to make ajax request for library names
 function loadLibraries() {
     var url = "php/loadLibraries.php";
@@ -22,8 +29,8 @@ function populateList(response) {
 //function to get database data to check what times are available for selected day and library
 function getTimes() {
     var selectedDay = document.getElementById("datePicker").valueAsDate.getDay();
-    var selectedDate = document.getElementById("datePicker").value;
-    var selectedLibrary = document.getElementById("librarySelect").value;
+    selectedDate = document.getElementById("datePicker").value;
+    selectedLibrary = document.getElementById("librarySelect").value;
 
     //converting into text day rather than number
     switch (selectedDay) {
@@ -80,6 +87,35 @@ function showTimes(response) {
         }
     } 
     if (timesAvailable == false) {
-        alert("Sorry, there are no available times on this day. Please select another.");
+        alert("Sorry, there are no available times on this day. Please select another.\n\nPlease Note: Sessions are unavailale on the Weekends.");
     }
+}
+
+//function to display confirmation box with session details repeated back to the client
+function showConfirm() {
+    var confirmBox = document.getElementById("confirmBox");
+    var details = document.getElementById("bookingDetails");
+    selectedTime = document.getElementById("timeSelect").value;
+    clientName = document.getElementById("nameInput").value;
+    clientNumber = document.getElementById("numberInput").value;
+    if (selectedDate != "" && selectedLibrary != "" && selectedTime != "" && clientName != "" && clientNumber != "") {
+        confirmBox.style.display = "block";
+        details.innerHTML = "You are booking a mentoring session on "+selectedDate+" at "+selectedTime+":00, at the "+selectedLibrary+" library.<br><br>Your contact details are: <br>Name: "+clientName+"<br>Phone Number: "+clientNumber; 
+    
+    } else {
+        alert("Please ensure all details have been entered before confirming");
+    }
+    
+}
+
+//close confirmation box
+function closeConfirm() {
+    var confirmBox = document.getElementById("confirmBox");
+    confirmBox.style.display = "none";
+}
+
+//TODO
+//function to tidy up inputs (.toLower, remove whitespace etc) and then insert into database
+function bookSession() {
+
 }
