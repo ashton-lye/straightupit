@@ -1,5 +1,8 @@
 //Shared Javascript - ajax functions etc
 
+//variable to store who is logged in
+var loggedInUser;
+
 //general ajax function
 function ajaxRequest(method, url, async, data, callback){
 

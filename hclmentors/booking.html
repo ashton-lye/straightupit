@@ -1,0 +1,28 @@
+<DOCTYPE html>
+    <head>
+        <title>HCL Mentor Program Booking</title>
+    </head>
+    <body onload="Javascript:loadLibraries()">
+        <div id="header"></div>
+
+        <div id="inputs">
+            <h1>Book a Mentoring Session</h1>
+            <p>Step 1: Choose a Date</p>
+            <input type="date" id="datePicker">
+            <p>Step 2: Choose a Library</p>
+            <select id="librarySelect" placeholder="Select Library" onchange="Javascript:getTimes()">
+                <option value="" selected>Select a Library</option>
+            </select>
+            <p>Step 3: Choose a Time</p>
+            <select id="timeSelect">
+                <option value="" selected>Select a Time</option>
+            </select>
+            <p>Step 4: Enter your Name and Phone Number</p>
+            <input type="text" id="nameInput" placeholder="Name">
+            <input type="text" id="numberInput" placeholder="Phone Number">
+            <p>Step 5: Enter a Brief Description of What you would like Help with: (Optional)</p>
+            <textarea id="problemText" rows="5" cols="50" placeholder="Enter Description Here"></textarea>
+        </div>
+        <script src="js/scripts.js"></script>
+        <script src="js/bookingscripts.js"></script>
+    </body>
