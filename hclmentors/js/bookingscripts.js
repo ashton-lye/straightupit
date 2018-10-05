@@ -2,10 +2,12 @@
 
 //declare client detail vars
 var selectedDate;
+var selectedDay;
 var selectedLibrary;
 var selectedTime;
 var clientName;
 var clientNumber;
+var clientProblem;
 
 //function to make ajax request for library names
 function loadLibraries() {
@@ -28,7 +30,7 @@ function populateList(response) {
 
 //function to get database data to check what times are available for selected day and library
 function getTimes() {
-    var selectedDay = document.getElementById("datePicker").valueAsDate.getDay();
+    selectedDay = document.getElementById("datePicker").valueAsDate.getDay();
     selectedDate = document.getElementById("datePicker").value;
     selectedLibrary = document.getElementById("librarySelect").value;
 
@@ -117,5 +119,17 @@ function closeConfirm() {
 //TODO
 //function to tidy up inputs (.toLower, remove whitespace etc) and then insert into database
 function bookSession() {
+    clientName = clientName.toLowerCase();
+    clientNumber = clientNumber.replace(/\s+/g, '');
+    clientProblem = document.getElementById("problemText").value;
 
+    var url = "php/bookSession.php";
+    var data = "day="+selectedDay+"&date="+selectedDate+"&time="+selectedTime+"&library="+selectedLibrary+"&clientName="+clientName+"&clientNumber="+clientNumber+"&problem="+clientProblem;
+
+    console.log(data);
+    ajaxRequest("POST", url, true, data, bookingCheck);
+}
+
+function bookingCheck(response) {
+    alert(response);
 }
