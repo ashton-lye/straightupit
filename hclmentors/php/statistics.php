@@ -9,6 +9,7 @@ include 'navbar.php';
 
 <h1>
 Statistics
+Some random stuff
 </h1>
 
 
