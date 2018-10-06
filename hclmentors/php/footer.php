@@ -1,7 +1,5 @@
 		<footer>
-		<h2>
-		Generic Footer
-		</h2>
+		Some random stuff in the footer
 		</footer>
 	</body>
 </html>

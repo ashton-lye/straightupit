@@ -7,7 +7,8 @@
   </head>
   <body>
   <header>
-  <h1>
-  Generic Header
-  </h1>
+  
+	  <img src="../images/HCLlogo.png" alt="HCL logo" class="headerImage">
+	  <h1 class="headerH1">Computer Mentoring</h1>
+  
   </header>
