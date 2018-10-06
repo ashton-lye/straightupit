@@ -13,7 +13,8 @@ nav{
 	height: 48px;
 }
 .pageContent {
-	
+	display: inline-block;
+	width: 50%;
 }
 footer{
 	background-color: #46494E; 
@@ -26,15 +27,43 @@ footer{
 	margin: auto ;
 	width: 50%;
 }
+aside ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+aside ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+aside ul li{
+	
+	display: block;
+	width: 160px;
+	background-color: #46494E ;
+	color: #FFFFFF;
+	padding: 10px;
+	margin-bottom: 1px;
+}
 
+
+.link:hover{
+	background-color: #BAB7B5 ;
+}
+aside{
+	margin-left: 15%;
+	float: left;
+}
 .footer img{
 	float: right;
 	max-width: 200px;
 }
 
-.headerH1{
-	float: right ;
-	width: 40%;
+.computerMentoringH1{
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	margin-top: 15px;
 }
 body{
 	margin: 0px;

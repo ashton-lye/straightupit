@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +12,6 @@
   <header>
   
 	  <img src="../images/HCLlogo.png" alt="HCL logo" class="headerImage">
-	  <h1 class="headerH1">Computer Mentoring</h1>
+	  
   
   </header>
