@@ -21,6 +21,17 @@ footer{
 	color: #FFFFFF ;
 }
 
+.footer{
+	padding-top: 25px;
+	margin: auto ;
+	width: 50%;
+}
+
+.footer img{
+	float: right;
+	max-width: 200px;
+}
+
 .headerH1{
 	float: right ;
 	width: 40%;
