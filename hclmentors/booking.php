@@ -16,7 +16,7 @@ include 'php/navbar.php';
         <div id="step2">
             <h3>Step 2: </h3>
             <p>Choose a Library</p>
-            <select id="librarySelect" placeholder="Select Library" onload="Javascript:loadLibraries()" onchange="Javascript:getTimes()">
+            <select id="librarySelect" placeholder="Select Library" onchange="Javascript:getTimes()">
                 <option value="" selected>Select a Library</option>
             </select>
         </div>
