@@ -16,8 +16,10 @@
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    /*border: 1px solid #888;*/
+    width: 75%; /* Could be more or less, depending on screen size */
+    box-sizing: border-box;
+    border: 5px solid #78BE20;
 }
 
 /* The Close Button */
@@ -34,10 +36,13 @@
     text-decoration: none;
     cursor: pointer;
 }
+.confirmBoxContent button {
+    height: 8%;
+    width: 15%;
+}
 
-h1 {
-    width: 100%;
-    background-color: red;
+.confirmBoxContent button#bookButton {
+    margin-left: 35%;
 }
 
 div#step1,#step2,#step3,#step4 {
@@ -45,9 +50,9 @@ div#step1,#step2,#step3,#step4 {
     box-sizing: border-box;
     border: 5px solid #78BE20;
     width: 24%;
-    height: 40%;
+    height: 30%;
     padding: 1%;
-    margin: 0.39%;
+    margin: 0.35%;
     overflow: auto;
 } 
 
@@ -66,8 +71,11 @@ div#step5 textarea {
 }
 
 div#step5 p {
-    text-align: center;
-    margin: 1%;
+    margin-left: 25%;
+}
+
+div#step5 h3 {
+    margin-left: 25%;
 }
 
 input#nameInput {
@@ -93,4 +101,21 @@ html {
     padding: 0%;
     margin: 0%;
     border: 0px;
+}
+
+div#confirmDiv {
+    box-sizing: border-box;
+    border: 5px solid #78BE20;
+    padding-bottom: 1%; 
+}
+
+div#confirmDiv p {
+    text-align: center;
+}
+
+div#confirmDiv button{
+    display: block;
+    margin: 0 auto;
+    height: 8%;
+    width: 20%;
 }
