@@ -10,28 +10,25 @@
 <body onload="Javascript:start()">
     <h1>Todays Mentoring sessions</h1>
 
+<div>
+    <p>Choose a Date:</p>
     <input type="date" id="datePicker">
 
-    <p>Step 2: Choose a Library</p>
+    <p>Choose a Library:</p>
     <select id="librarySelect" placeholder="Select Library" onchange="Javascript:updateSessionTable()">    
         <option value="" selected>Select a Library</option>
     </select>
-    </body>
+</div>
+<h2 id="libraryTitle">Mentoring sessions for Central Library</h2>
     <p></p>
-<div>
-    <table id="titles">
-    </table>
+<div id="sessionTable">
     <table id="sessions">
             <th>Time</th>
             <th>Client Name</th>
             <th>Mentor</th>
             <th>Problem</th>
-            <tr id ="c1">df</tr>
     </table>
 </div>
-
-
-
 
 </body>
 <script src="js/scripts.js"></script>

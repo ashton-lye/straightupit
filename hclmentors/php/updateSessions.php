@@ -2,8 +2,15 @@
     require_once('connect.php');
 
     $library = $_POST['library'];
+    $date = $_POST['date'];
 
-    $query = "select client_name, problem, time, mentor from sessions WHERE library = '$library' ";
+    if ($date == '')
+    {
+        $query = "select client_name, problem, time, mentor from sessions WHERE library = '$library' ";
+    }else {
+        $query = "select client_name, problem, time, mentor from sessions WHERE library = '$library' and date = '$date' ";
+    }
+
     $arr = [];
 
     $result = $con->query($query);
