@@ -10,8 +10,9 @@ session_start();
   </head>
   <body>
   <header>
-  
+
 	  <img src="images/HCLlogo.png" alt="HCL logo" class="headerImage">
+
 	  
   
   </header>
