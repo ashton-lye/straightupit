@@ -9,6 +9,8 @@ var clientName;
 var clientNumber;
 var clientProblem;
 
+document.getElementById("librarySelect").onload = loadLibraries();
+
 //function to make ajax request for library names
 function loadLibraries() {
     var url = "php/loadLibraries.php";
@@ -100,12 +102,14 @@ function showConfirm() {
     selectedTime = document.getElementById("timeSelect").value;
     clientName = document.getElementById("nameInput").value;
     clientNumber = document.getElementById("numberInput").value;
-    if (selectedDate != "" && selectedLibrary != "" && selectedTime != "" && clientName != "" && clientNumber != "") {
+    clientNumber = clientNumber.replace(/\s+/g, '');
+    var isnum = /^\d+$/.test(clientNumber);
+    if (selectedDate != "" && selectedLibrary != "" && selectedTime != "" && clientName != "" && clientNumber != "" && clientNumber.length <= 10 && isnum) {
         confirmBox.style.display = "block";
         details.innerHTML = "You are booking a mentoring session on "+selectedDate+" at "+selectedTime+":00, at the "+selectedLibrary+" library.<br><br>Your contact details are: <br>Name: "+clientName+"<br>Phone Number: "+clientNumber; 
     
     } else {
-        alert("Please ensure all details have been entered before confirming");
+        alert("Please ensure all details have been entered correctly before confirming.");
     }
     
 }
@@ -120,7 +124,6 @@ function closeConfirm() {
 //function to tidy up inputs (.toLower, remove whitespace etc) and then insert into database
 function bookSession() {
     clientName = clientName.toLowerCase();
-    clientNumber = clientNumber.replace(/\s+/g, '');
     clientProblem = document.getElementById("problemText").value;
 
     var url = "php/bookSession.php";
