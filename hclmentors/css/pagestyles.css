@@ -1,12 +1,96 @@
 header{
-	background-color: #f46842;
+	background-color: #FFFFFF;
+	margin: auto ;
+	width: 50%;
+	height: 100px;
+}
+header img{
+	padding-top: 15px;
+	max-width: 273px;
 }
 nav{
-	background-color: #42f474;
+	background-color: #78BE20;
+	height: 48px;
 }
 .pageContent {
-	
+	display: inline-block;
+	width: 50%;
 }
 footer{
-	background-color: #4286f4;
+	background-color: #46494E; 
+	height: 100px;
+	color: #FFFFFF ;
+}
+
+.footer{
+	padding-top: 25px;
+	margin: auto ;
+	width: 50%;
+}
+aside ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+aside ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+aside ul li{
+	
+	display: block;
+	width: 160px;
+	background-color: #46494E ;
+	color: #FFFFFF;
+	padding: 10px;
+	margin-bottom: 1px;
+}
+.link:hover{
+	background-color: #BAB7B5 ;
+}
+aside{
+	margin-left: 15%;
+	float: left;
+}
+.footer img{
+	float: right;
+	max-width: 200px;
+}
+
+.computerMentoringH1{
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	margin-top: 15px;
+}
+body{
+	margin: 0px;
+	font-family: calibri, sans-serif;
+}
+.navbar{
+	margin: auto ;
+	width: 50%;
+	text-align: center ;
+}
+.navbarBTNs {
+	
+	margin: 0px;
+	width: 100%;
+	padding: 0px;
+	height: 48px;
+	border-collapse: collapse;
+}
+
+.navbarBTNs td{
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.navbarBTNs td a{
+	color: white;
+	text-decoration: none;
+}
+
+.navbarBTNs td:hover{
+	background-color: #BAB7B5 ;
 }
