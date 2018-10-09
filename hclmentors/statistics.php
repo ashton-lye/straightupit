@@ -9,7 +9,7 @@ include 'php/navbar.php';
 <h1>
 Statistics
 </h1>
-
+<div class="mainArea">
 <?php
 //NUMBER OF CLIENTS PER MONTH THIS YEAR
 //echo basename($_SERVER['PHP_SELF']);
@@ -57,12 +57,12 @@ foreach($result as $row){
 }
 echo "</table></div></div>";
 ?>
+</div>
 
-
-
+<div class="mainArea">
 
 <?php
-echo '<div class="panel"><div class="innerPanel"><h2>Mentors</h2><h3>'.date("Y")."</h3><table>";
+echo '<div class="panel"><div class="innerPanel"><h2>Mentors</h2><table>';
 $query = "Select sessions.mentor, mentors.active, mentors.fname, mentors.lname, count(IF(sessions.walkin = 'false' AND sessions.noshow = 'false', 1, NULL)) as 'Booked' ,count(IF(sessions.walkin = 'true', 1, NULL)) as 'Walkins', count(IF(sessions.noshow = 'true', 1, NULL)) as 'No Shows', count(*) AS 'Total' from sessions JOIN mentors ON sessions.mentor = mentors.username group by sessions.mentor ORDER BY mentors.active DESC";
 $result = $con->query($query);
 foreach($result as $row){
@@ -73,7 +73,7 @@ echo "</table></div></div>";
 
 <div class="panel"><div class="innerPanel"><h2>Libraries</h2></div></div>
 
-
+</div>
 </div>
 
 <?php

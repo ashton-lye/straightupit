@@ -22,7 +22,7 @@
 	if(isset($_SESSION["username"])){
 		
 		echo '<aside><ul>
-		<li class="link"><a href="bookings.php">Make A Booking</a></li>
+		<li class="link"><a href="booking.php">Make A Booking</a></li>
 		<li class="link"><a href="">Bookings</a></li>
 		<li class="link"><a href="">Interactions</a></li>
 		<li class="link"><a href="">Account</a></li>
