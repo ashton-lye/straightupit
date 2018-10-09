@@ -26,7 +26,7 @@
 		<li class="link"><a href="">Bookings</a></li>
 		<li class="link"><a href="">Interactions</a></li>
 		<li class="link"><a href="">Account</a></li>
-		<li class="link"><a href="">Statistics</a></li>'
+		<li class="link"><a href="">Statistics</a></li>';
 	
 		echo '<li>Logged in as: '. $_SESSION["username"] .'</li><li class="link"><a href="">Logout</a></li><ul>
 		</aside>';

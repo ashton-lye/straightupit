@@ -1,7 +1,7 @@
 <?php
-require_once('connect.php');
-include 'header.php';
-include 'navbar.php';
+require_once('php/connect.php');
+include 'php/header.php';
+include 'php/navbar.php';
 ?>
 
 <div class="statistics">
@@ -71,5 +71,5 @@ foreach($result as $row){
 </div>
 
 <?php
-include 'footer.php'
+include 'php/footer.php'
 ?>
