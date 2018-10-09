@@ -6,9 +6,9 @@
 
     if ($date == '')
     {
-        $query = "select client_name, problem, time, mentor from sessions WHERE library = '$library' ";
+        $query = "select client_name, problem, time, mentor, client_phone, notes from sessions WHERE library = '$library' ";
     }else {
-        $query = "select client_name, problem, time, mentor from sessions WHERE library = '$library' and date = '$date' ";
+        $query = "select client_name, problem, time, mentor, client_phone, notes from sessions WHERE library = '$library' and date = '$date' ";
     }
 
     $arr = [];
@@ -19,7 +19,9 @@
             "name" => $row['client_name'],
             "problem" => $row['problem'],
             "time" => $row['time'],
-            "mentor" => $row['mentor']
+            "mentor" => $row['mentor'],
+            "phone" => $row['client_phone'],
+            "notes" => $row['notes']
         );
     }
 

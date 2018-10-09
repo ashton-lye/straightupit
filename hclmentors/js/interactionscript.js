@@ -1,3 +1,4 @@
+//Johnnys scripts for viewsessions page
 
 //declare client detail vars
 var selectedDate;
@@ -9,7 +10,7 @@ var clientNumber;
 var clientProblem;
 var reset = document.getElementById('sessionTable').innerHTML;//copy of blank table
 
-document.getElementById("librarySelect").onload = start();
+document.getElementById("librarySelect").onload = start();//initialise start() method onload
 
 //function to make ajax request for library names
 function loadLibraries() {
@@ -52,11 +53,15 @@ function populateTable(response){
         var cell1 = row.insertCell(1);
         var cell2 = row.insertCell(2);
         var cell3 = row.insertCell(3);
+        var cell4 = row.insertCell(4);
+        var cell5 = row.insertCell(5);
         cell.className = 'c'[i];
         cell.innerHTML = sessionData[i].time;
         cell1.innerHTML = sessionData[i].name;
         cell2.innerHTML = sessionData[i].mentor;
         cell3.innerHTML = sessionData[i].problem;
+        cell4.innerHTML = sessionData[i].phone;
+        cell5.innerHTML = sessionData[i].notes;
     }    
 }
 
