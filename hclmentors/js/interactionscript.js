@@ -9,6 +9,8 @@ var clientNumber;
 var clientProblem;
 var reset = document.getElementById('sessionTable').innerHTML;//copy of blank table
 
+document.getElementById("librarySelect").onload = start();
+
 //function to make ajax request for library names
 function loadLibraries() {
     var url = "php/loadLibraries.php";
