@@ -12,10 +12,9 @@ include 'php/navbar.php';
     <h1>Todays Mentoring sessions</h1>
     
 <div id = "dateLibrary">
-    <p onload="Javascript:start()">Choose a Date:</p>
+    <p>Choose a Date:</p>
     <input type="date" id="datePicker">
 
-    <p>Choose a Library:</p>
     <select id="librarySelect" placeholder="Select Library" onchange="Javascript:updateSessionTable()">    
         <option value="" selected>Select a Library</option>
     </select>
