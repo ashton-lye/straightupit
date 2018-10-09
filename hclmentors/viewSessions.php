@@ -28,6 +28,8 @@ include 'php/navbar.php';
             <th>Client Name</th>
             <th>Mentor</th>
             <th>Problem</th>
+            <th>Phone</th>
+            <th>Notes</th>
     </table>
 </div>
 
