@@ -1,14 +1,13 @@
 /* Stats page*/
 .statistics {
-	
-	width: 100%;
-	padding-left: 50px;
+	margin: auto;
+	width: 70%;
+	height: 500px;
 }
 .panel{
-	
+	float: left;
 	margin-top: 15px;
-	width: 100%;
-	border: 1px solid black;
+	width: 46%;
 	padding-left:15px;
 	padding-right: 15px;
 	padding-bottom: 15px;
@@ -29,5 +28,8 @@
 	text-align:center;
 }
 .right{
-	float: right;
+	float: right ;
+}
+.panel h2{
+	text-align: center;
 }

@@ -28,7 +28,7 @@
 		<li class="link"><a href="">Account</a></li>
 		<li class="link"><a href="">Statistics</a></li>';
 	
-		echo '<li>Logged in as: '. $_SESSION["username"] .'</li><li class="link"><a href="php/logoutProcess.php">Logout</a></li><ul>
+		echo '<li>Logged in as: '. $_SESSION["username"] .'</li><li class="link"><a href="php/logoutProcess.php">Logout</a></li></ul>
 		</aside>';
 			
 	}	
