@@ -1,0 +1,43 @@
+.CH
+{
+	width:100%;
+	height:100%;
+	
+}
+#name th, td
+{
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+}
+#name th
+{border-top: 1px solid black;
+border-bottom: 2px solid black;}
+#contents
+{
+	float: left;
+	width: 100%;
+	height: 500px;
+	
+	border-collapse: collapse;	
+	
+	
+}
+input[type ='text']
+{
+	text-align: left;
+	width: 50%;
+}
+.r2
+{ margin-left: 86px;}
+#top
+{	
+	float: left;
+	padding-left: 30px;
+}
+#radiobuttons
+{	
+	float: left;
+}
+h1
+{text-align: center}
+
