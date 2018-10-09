@@ -12,10 +12,16 @@ nav{
 	background-color: #78BE20;
 	height: 48px;
 }
-.pageContent {
-	display: inline-block;
-	width: 50%;
-}
+
+
+
+
+
+
+
+
+
+/* Login page*/
 .login{
 	background-color: #46494E;
 	color: #FFFFFF;
@@ -29,6 +35,7 @@ input[type="text"], input[type="password"], input[type="submit"]{
 	font-size: 16pt;
 	width: 85%;
 }
+
 input[type="submit"]{
 	color: #FFFFFF;
 	background-color: #78BE20 ;
@@ -37,22 +44,32 @@ input[type="submit"]{
 input[type="submit"]:hover{
 	background-color: #BAB7B5 ;
 }
-
 .button{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+
+
+
+/* Footer */
 footer{
 	background-color: #46494E; 
 	height: 100px;
 	color: #FFFFFF ;
 }
-
 .footer{
 	padding-top: 25px;
 	margin: auto ;
 	width: 50%;
 }
+
+
+
+
+
+
+
 aside ul{
 	list-style-type: none;
 	margin: 0;
@@ -75,8 +92,7 @@ aside ul li{
 	background-color: #BAB7B5 ;
 }
 aside{
-	
-	float: left;
+	position: absolute;
 }
 .footer img{
 	float: right;

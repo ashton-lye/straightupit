@@ -1,0 +1,33 @@
+/* Stats page*/
+.statistics {
+	
+	width: 100%;
+	padding-left: 50px;
+}
+.panel{
+	
+	margin-top: 15px;
+	width: 100%;
+	border: 1px solid black;
+	padding-left:15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	background-color: #46494E;
+}
+.panel h3{
+	text-align: center;
+}
+.panel table{
+	
+	width: 100%;
+	border-collapse: collapse;
+}
+.panel table tr td, .panel table tr th{
+	border: 1px solid black;
+}
+.panel table tr td{
+	text-align:center;
+}
+.right{
+	float: right;
+}
