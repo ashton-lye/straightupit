@@ -2,22 +2,22 @@
 .statistics {
 	margin: auto;
 	width: 70%;
-	height: 500px;
+	height: 800px;
 }
 .panel{
-	float: left;
+	display: inline-grid;
+	
 	margin-top: 15px;
-	width: 46%;
-	padding-left:15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
+	width: 48%;
+	margin-right: 15px;
 	background-color: #46494E;
 }
 .panel h3{
+	color: #FFFFFF;
 	text-align: center;
 }
 .panel table{
-	
+	background-color: #FFFFFF;
 	width: 100%;
 	border-collapse: collapse;
 }
@@ -31,5 +31,9 @@
 	float: right ;
 }
 .panel h2{
+	color: #FFFFFF;
 	text-align: center;
+}
+.innerPanel{
+	margin: 15px;
 }
