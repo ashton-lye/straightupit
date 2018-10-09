@@ -16,6 +16,32 @@ nav{
 	display: inline-block;
 	width: 50%;
 }
+.login{
+	background-color: #46494E;
+	color: #FFFFFF;
+	text-align: center;
+	width:300px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+input[type="text"], input[type="password"], input[type="submit"]{
+	font-size: 16pt;
+	width: 85%;
+}
+input[type="submit"]{
+	color: #FFFFFF;
+	background-color: #78BE20 ;
+	border: 1px solid #46494E;
+}
+input[type="submit"]:hover{
+	background-color: #BAB7B5 ;
+}
+
+.button{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 footer{
 	background-color: #46494E; 
 	height: 100px;

@@ -8,11 +8,11 @@ include 'php/navbar.php';
 		<form name="login" action="php/loginProcessV2.php" method="POST">
 					
 		<br>
-		<label for="usernameField">Username:</label>
-		<input type="text" size="25" id="usernameField" name="username"><br><br>				
 		
-		<label for="passwordField">Password:</label>
-		<input type="password" size="25" id="passwordField" name="password"><br><br>
+		<input type="text"  id="usernameField" name="username" placeholder="Username"><br><br>				
+		
+		
+		<input type="password"  id="passwordField" name="password" placeholder="Password"><br><br>
 		<input class="button" type="submit" value="Login"><br><br>		
 				
 	</form>
