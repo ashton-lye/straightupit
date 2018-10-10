@@ -30,15 +30,15 @@ function populateList(response) {
     }
 }
 
-//function to get database data to check what times are available for selected day and library
-function getTimes() {
-    selectedDay = document.getElementById("datePicker").valueAsDate.getDay();
-    selectedDate = document.getElementById("datePicker").value;
-    selectedLibrary = document.getElementById("librarySelect").value;
-
+function checkWeekend() {
+    var datePicker = document.getElementById("datePicker");
+    selectedDay = datePicker.valueAsDate.getDay();
+    
     //converting into text day rather than number
     switch (selectedDay) {
         case 0: 
+            alert("Sorry, Mentoring Sessions are Not Available on Weekends. Please Select a Weekday");
+            datePicker.value = "";
             break;
         case 1:
             selectedDay = "mon";
@@ -56,8 +56,18 @@ function getTimes() {
             selectedDay = "fri";
             break;
         case 6:
+            alert("Sorry, Mentoring Sessions are Not Available on Weekends. Please Select a Weekday");
+            datePicker.value = "";
             break;
     }
+
+}
+
+//function to get database data to check what times are available for selected day and library
+function getTimes() {
+    
+    selectedDate = document.getElementById("datePicker").value;
+    selectedLibrary = document.getElementById("librarySelect").value;
 
     var url = "php/checkAvailable.php";
     var data = "day="+selectedDay+"&date="+selectedDate+"&library="+selectedLibrary;

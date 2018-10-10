@@ -37,8 +37,9 @@
     cursor: pointer;
 }
 .confirmBoxContent button {
-    height: 8%;
+    height: 40px;
     width: 15%;
+    font-size: 14pt;
 }
 
 .confirmBoxContent button#bookButton {

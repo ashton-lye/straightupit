@@ -11,7 +11,7 @@ include 'php/navbar.php';
         <div id="step1">
             <h3>Step 1: </h3>
             <p>Choose a Date</p>
-            <input type="date" id="datePicker">
+            <input type="date" id="datePicker" onchange="Javascript:checkWeekend()">
         </div>
         <div id="step2">
             <h3>Step 2: </h3>
