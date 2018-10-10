@@ -18,6 +18,7 @@ function checkLogin(response) {
         usernameInput.value = "";
         passwordInput.value = "";
         alert("Login Successful!");
+        loggedInUser = response;
     }
     else {
         alert("Login Unsuccessful - Please Check Your Details");
