@@ -4,7 +4,9 @@ include 'php/header.php';
 include 'php/navbar.php';
 ?>
 <div class="CH">
-    <link rel="stylesheet" href="css/history.css">
+    
+	
+	<link rel="stylesheet" href="css/history.css">
 <h1> Client Histories</h1>
 		<div id = 'top'>
 		
@@ -28,3 +30,8 @@ include 'php/navbar.php';
 
 	</div>
 <script src="js/client_history.js"></script>
+
+	<?php
+	include 'php/footer.php'
+	?>
+
