@@ -29,7 +29,7 @@
 				$row = $result->fetch();
 				if($row == null){
 					//LOGIN FAILED
-					header("location: ../statistics.php");
+					header("location: ../loginV2.php?login=fail");
 				}else{
 					//USER IS A MENTOR
 					header("location: ../statistics.php");
