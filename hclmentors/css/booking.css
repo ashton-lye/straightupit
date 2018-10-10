@@ -50,9 +50,9 @@ div#step1,#step2,#step3,#step4 {
     box-sizing: border-box;
     border: 5px solid #78BE20;
     width: 24%;
-    height: 30%;
+    height: 40%;
     padding: 1%;
-    margin: 0.35%;
+    margin: 0.30%;
     overflow: auto;
 } 
 
@@ -118,4 +118,11 @@ div#confirmDiv button{
     margin: 0 auto;
     height: 8%;
     width: 20%;
+}
+
+div.content {
+    margin-left: 15%;
+    width: 70%;
+    height: 100%;
+    display: block;
 }

@@ -3,7 +3,7 @@ include 'php/header.php';
 include 'php/navbar.php';
 ?>
 
-<div class="pageContent">
+<div class="content">
     <link rel="stylesheet" href="css/booking.css">
 
     <div id="inputs">
