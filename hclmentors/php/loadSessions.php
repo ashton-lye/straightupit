@@ -1,7 +1,7 @@
 <?php
     require_once('connect.php');
 
-    $query = "select client_name, problem, time, mentor, client_phone, notes from sessions WHERE library = 'central' ";
+    $query = "select client_name, problem, time, mentor, client_phone, notes from sessions WHERE library = 'central' and date = curdate() and date = curdate() ";
     $arr = [];
 
     $result = $con->query($query);
