@@ -1,6 +1,7 @@
 /* Stats page*/
 .statistics {
 	margin: auto;
+	margin-bottom: 100px;
 	width: 70%;
 	height: content;
 }

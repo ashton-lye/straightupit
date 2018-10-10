@@ -19,8 +19,6 @@ nav{
 
 
 
-
-
 /* Login page*/
 .login{
 	background-color: #46494E;
@@ -54,6 +52,7 @@ input[type="submit"]:hover{
 
 /* Footer */
 footer{
+	
 	background-color: #46494E; 
 	height: 100px;
 	color: #FFFFFF ;
