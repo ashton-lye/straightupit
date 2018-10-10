@@ -9,16 +9,16 @@ include 'php/navbar.php';
 		<div id = 'top'>
 		
 			<label> Search Clients: 
-			<input type='text' id= 'clientNameinput'></label>
+			<input type='text' id= 'clientinput'></label>
 			 
 			
 		</div>
 	<div id="radiobuttons">
 		<label>Search By: &nbsp;</label>
 		
-		<label>&nbsp;<input type = 'radio' name='search' onclick='JavaScript:getNameSession(clientNameinput.value);' value='name' >Client Name </label>
+		<label>&nbsp;<input type = 'radio' name='search' onclick='JavaScript:getName(clientinput.value);' value='name' >Client Name </label>
 		<br>
-		<label> <input type ='radio' name='search' class='r2' value='phone' onclick='alert("phone")'>Client Phone Number</label>
+		<label> <input type ='radio' name='search' class='r2' value='phone' onclick='getPhone(clientinput.value);'>Client Phone Number</label>
 	</div>
 		<div id='contents'>
 		
