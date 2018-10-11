@@ -19,8 +19,6 @@ nav{
 
 
 
-
-
 /* Login page*/
 .login{
 	background-color: #46494E;
@@ -29,13 +27,15 @@ nav{
 	width:300px;
 	margin: auto;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 441px;
 }
 input[type="text"], input[type="password"], input[type="submit"]{
 	font-size: 16pt;
 	width: 85%;
 }
-
+.error{
+	color: #FF0000;
+}
 input[type="submit"]{
 	color: #FFFFFF;
 	background-color: #78BE20 ;
@@ -54,6 +54,7 @@ input[type="submit"]:hover{
 
 /* Footer */
 footer{
+	
 	background-color: #46494E; 
 	height: 100px;
 	color: #FFFFFF ;

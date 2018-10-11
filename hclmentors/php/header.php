@@ -9,6 +9,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/pagestyles.css"/>
   </head>
   <body>
+  
   <header>
 
 	  <img src="images/HCLlogo.png" alt="HCL logo" class="headerImage">

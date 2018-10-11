@@ -5,6 +5,7 @@ include 'php/navbar.php';
 ?>
 
 <div class="login">
+
 		<form name="login" action="php/loginProcessV2.php" method="POST">
 					
 		<br>
@@ -12,7 +13,14 @@ include 'php/navbar.php';
 		<input type="text"  id="usernameField" name="username" placeholder="Username"><br><br>				
 		
 		
-		<input type="password"  id="passwordField" name="password" placeholder="Password"><br><br>
+		<input type="password"  id="passwordField" name="password" placeholder="Password">
+		<?php
+			if(isset($_GET['login'])){
+				echo '<span class="error">Wrong username/password</span>'; 
+			}else{
+				echo "<br><br>";
+			}
+		?>
 		<input class="button" type="submit" value="Login"><br><br>		
 				
 	</form>

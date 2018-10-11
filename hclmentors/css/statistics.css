@@ -1,24 +1,30 @@
 /* Stats page*/
 .statistics {
-	
+	margin: auto;
+	margin-bottom: 50px;
+	width: 70%;
+	height: content;
+}
+.mainArea{
+	display: flex;
 	width: 100%;
-	padding-left: 50px;
+	margin-bottom: 10px;
 }
 .panel{
-	
-	margin-top: 15px;
-	width: 100%;
-	border: 1px solid black;
-	padding-left:15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
+	flex: 1;
+	width: 48%;
+	margin-right: 10px;
 	background-color: #46494E;
 }
 .panel h3{
+	color: #FFFFFF;
 	text-align: center;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 .panel table{
-	
+	background-color: #FFFFFF;
 	width: 100%;
 	border-collapse: collapse;
 }
@@ -29,5 +35,13 @@
 	text-align:center;
 }
 .right{
-	float: right;
+	float: right ;
+}
+.panel h2{
+	color: #FFFFFF;
+	text-align: center;
+	margin: 5px;
+}
+.innerPanel{
+	margin: 15px;
 }
