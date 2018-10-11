@@ -19,8 +19,8 @@ include 'php/navbar.php';
 		<label>Search By: &nbsp;</label>
 		
 		<label>&nbsp;<input type = 'radio' name='search' onclick='JavaScript:getName(clientinput.value);' value='name' >Client Name </label>
-		<br>
-		<label> <input type ='radio' name='search' class='r2' value='phone' onclick='getPhone(clientinput.value);'>Client Phone Number</label>
+	
+		<label> <input type ='radio' name='search' value='phone' onclick='getPhone(clientinput.value);'>Client Phone Number</label>
 	</div>
 		<div id='contents'>
 		
