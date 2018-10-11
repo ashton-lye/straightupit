@@ -23,8 +23,9 @@
 		
 		echo '<aside><ul>
 		<li class="link"><a href="booking.php">Make A Booking</a></li>
-		<li class="link"><a href="">Bookings</a></li>
-		<li class="link"><a href="">Interactions</a></li>
+		<li class="link"><a href="viewSessions.php">Sessions</a></li>
+		<li class="link"><a href="Client_history.php">Client History</a></li>
+		<li class="link"><a href="interactions.php">Interactions</a></li>
 		<li class="link"><a href="">Account</a></li>
 		<li class="link"><a href="statistics.php">Statistics</a></li>';
 	
