@@ -37,12 +37,17 @@
     cursor: pointer;
 }
 .confirmBoxContent button {
-    height: 8%;
+    height: 40px;
     width: 15%;
+    font-size: 14pt;
 }
 
 .confirmBoxContent button#bookButton {
     margin-left: 35%;
+}
+
+div#bookedDiv {
+    display: none;
 }
 
 div#step1,#step2,#step3,#step4 {
@@ -50,7 +55,7 @@ div#step1,#step2,#step3,#step4 {
     box-sizing: border-box;
     border: 5px solid #78BE20;
     width: 24%;
-    height: 40%;
+    min-height: 220px !important;
     padding: 1%;
     margin: 0.30%;
     overflow: auto;
@@ -68,6 +73,7 @@ div#step5 textarea {
     margin-bottom: 1%;
     width: 50%;
     height: 20%;
+    font-size: 16pt;
 }
 
 div#step5 p {
@@ -83,8 +89,8 @@ input#nameInput {
 }
 
 input, select {
-    height: 20%;
-    width: 100%;
+    width: 97% !important;
+    font-size: 16pt !important;
 }
 
 p {
@@ -107,6 +113,8 @@ div#confirmDiv {
     box-sizing: border-box;
     border: 5px solid #78BE20;
     padding-bottom: 1%; 
+    width: 99%;
+    margin: 0 auto;
 }
 
 div#confirmDiv p {
@@ -116,8 +124,9 @@ div#confirmDiv p {
 div#confirmDiv button{
     display: block;
     margin: 0 auto;
-    height: 8%;
-    width: 20%;
+    height: 50px;
+    width: 30%;
+    font-size: 16pt;
 }
 
 div.content {
@@ -125,4 +134,12 @@ div.content {
     width: 70%;
     height: 100%;
     display: block;
+}
+
+div.footer {
+    margin-top: 2%;
+}
+
+div#inputs {
+    height: 100%;
 }
