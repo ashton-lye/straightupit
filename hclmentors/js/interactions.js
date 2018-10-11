@@ -1,20 +1,24 @@
+var idNumber;
+var reset = document.getElementById('sessionTable').innerHTML;//copy of blank table
+
 document.getElementById("mentorInteractions").onload = start2();//initialise start() method onload
 
 function start2() {
     getSessions2();
 }
+
 function getSessions2 () {
     var url ="php/loadSessions.php";
     ajaxRequest("POST", url, true, "", populateInteractionsTable);
 }
+
 //Populate HTML session table with appropriate details from db for interactions page
 function populateInteractionsTable(response){       
     var table = document.getElementById("sessions");    
     console.log(response)
     var sessionData = JSON.parse(response);
     console.log(sessionData);
-    
-    
+        
     //insert data from array into html table
     for (var i=0; i<sessionData.length; i++)
     {
@@ -24,8 +28,9 @@ function populateInteractionsTable(response){
         var cell1 = row.insertCell(1);
         var cell2 = row.insertCell(2);
         var cell3 = row.insertCell(3);
-        cell.className = 'c'[i];
+        cell.id = 'c'+[i];
         cell.innerHTML = sessionData[i].sessionID;
+        cell.style.cursor = "pointer";
         cell1.innerHTML = sessionData[i].name;
         cell2.innerHTML = sessionData[i].problem;
         cell3.innerHTML = sessionData[i].notes;                      
@@ -50,7 +55,29 @@ function getSessionId () {
 }
 
 function displayNotes(response) {
+    var sIdTitle = document.getElementById('sessionID_title');
     var notes = document.getElementById('notes');
     notes.innerHTML = response;
+    sIdTitle.innerText = "Selected SessionID:    "+idNumber;
     console.log(response);
+}
+
+function updateSessionNotes (){
+    var notes = document.getElementById('notes');
+    var updateNotes = notes.value;
+    console.log('TEST'+idNumber);
+    var url ="php/updateIS.php";
+    var data = "notes="+updateNotes+"&sessionID="+idNumber;
+    ajaxRequest("POST", url, true, data, updateCheck);
+    console.log(updateNotes);
+}
+function updateCheck(response) {
+    if (response == "Session Notes updated Successfully!") {
+        alert('Success');
+        document.getElementById('sessionTable').innerHTML = reset;   
+        document.getElementById('notes').value = "Update Complete"; 
+        location = location;
+    } else {
+        alert(response);
+    }
 }
