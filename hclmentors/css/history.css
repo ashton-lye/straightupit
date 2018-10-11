@@ -1,18 +1,21 @@
 .CH
 {
-	width:100%;
+	width:75%;
 	height:100%;
 	padding-bottom: 25%;
+	margin-left:200px; 
 	
 }
 table
 {
 	border-collapse: collapse;
 	width: 100%;
+	
 }
 #name th, td
 {
 border-left: 1px solid black;
+border-right: 1px solid black;
 border-bottom: 1px solid black;
 }
 #name th
@@ -45,5 +48,6 @@ border-bottom: 2px solid black;}
 	float: left;
 }
 h1
-{text-align: center}
+{text-align: center;
+margin-left: 75px;}
 
