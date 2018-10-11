@@ -14,22 +14,24 @@ Mentor Interactions
 
 <div id="sessionTable">
     <table id="sessions">
-            <th>Time</th>
+            <th>Session ID</th>
             <th>Client Name</th>
-            <th>Mentor</th>
             <th>Problem</th>
-            <th>Phone</th>
-            <th>Notes</th>
+            <th>Notes</th>            
     </table>
 </div>
 
+<br>
 
-<textarea label="Session Notes:" rows="4" cols="50">
-Notes
-</textarea>
+<div id="updateNotes">
+  <textarea id="notes" label="Session Notes:" rows="4" cols="50">
+  Enter notes about session here
+  </textarea>
+  <button type="button" id="confirmUpdate" onclick="Javascript:onclickRow()">Update</button>
+</div>
 
-<script src="../js/scripts.js"></script>
-<script src="../js/interactionscript.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/interactions.js"></script>
 
 <?php
 include 'php/footer.php'
