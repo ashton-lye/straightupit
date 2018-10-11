@@ -9,7 +9,7 @@ include 'php/navbar.php';
     <title>HCL Computer Mentor Programme</title>
     <link rel="stylesheet" href="css/viewsessions.css">
 </head>
-    <h1>Todays Mentoring sessions</h1>
+    <h1>Today's Mentoring Sessions</h1>
     
 <div id = "dateLibrary">
     <p>Choose a Date:</p>
@@ -33,6 +33,8 @@ include 'php/navbar.php';
     </table>
 </div>
 
+<div id="moveFoot" >
+</div>
 
 <script src="js/scripts.js"></script>
 <script src="js/viewsessions.js"></script>
