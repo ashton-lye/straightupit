@@ -73,12 +73,12 @@ CREATE TABLE `sessions` (
 
 
 INSERT INTO `library` (`lib_name`, `lib_address`, `lib_phone`) VALUES
-('central', '9 Garden Place', '078386826'),
-('chartwell', '5 Lynden Court', '078386844'),
+('Central', '9 Garden Place', '078386826'),
+('Chartwell', '5 Lynden Court', '078386844'),
 ('dinsdale', 'Whatawhata Road Shops', '078386855'),
-('glenview', 'MacDonald Road', '078386821'),
-('hillcrest', '58 Masters Avenue', '078386849'),
-('st andrews', 'Corner of Braid Road and Taylor Terrace', '078386847');
+('Glenview', 'MacDonald Road', '078386821'),
+('Hillcrest', '58 Masters Avenue', '078386849'),
+('St Andrews', 'Corner of Braid Road and Taylor Terrace', '078386847');
 
 INSERT INTO `mentors` (`username`, `password`, `active`, `email`, `fname`, `lname`) VALUES
 ('bnye3', 'pword3', 'true', 'bnye3@gmail.com', 'bill', 'nye'),

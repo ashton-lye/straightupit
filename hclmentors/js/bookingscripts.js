@@ -26,19 +26,19 @@ function populateList(response) {
 
     for (var i = 0; i < libraries.length; i++) {
         currentLibrary = libraries[i].library;
-        librarySelect.innerHTML += "<option value="+currentLibrary+">"+currentLibrary+" library</option>";
+        librarySelect.innerHTML += "<option value="+currentLibrary+">"+currentLibrary+" Library</option>";
     }
 }
 
-//function to get database data to check what times are available for selected day and library
-function getTimes() {
-    selectedDay = document.getElementById("datePicker").valueAsDate.getDay();
-    selectedDate = document.getElementById("datePicker").value;
-    selectedLibrary = document.getElementById("librarySelect").value;
-
+function checkWeekend() {
+    var datePicker = document.getElementById("datePicker");
+    selectedDay = datePicker.valueAsDate.getDay();
+    
     //converting into text day rather than number
     switch (selectedDay) {
         case 0: 
+            alert("Sorry, Mentoring Sessions are Not Available on Weekends. Please Select a Weekday");
+            datePicker.value = "";
             break;
         case 1:
             selectedDay = "mon";
@@ -56,8 +56,18 @@ function getTimes() {
             selectedDay = "fri";
             break;
         case 6:
+            alert("Sorry, Mentoring Sessions are Not Available on Weekends. Please Select a Weekday");
+            datePicker.value = "";
             break;
     }
+
+}
+
+//function to get database data to check what times are available for selected day and library
+function getTimes() {
+    
+    selectedDate = document.getElementById("datePicker").value;
+    selectedLibrary = document.getElementById("librarySelect").value;
 
     var url = "php/checkAvailable.php";
     var data = "day="+selectedDay+"&date="+selectedDate+"&library="+selectedLibrary;
@@ -106,7 +116,7 @@ function showConfirm() {
     var isnum = /^\d+$/.test(clientNumber);
     if (selectedDate != "" && selectedLibrary != "" && selectedTime != "" && clientName != "" && clientNumber != "" && clientNumber.length <= 10 && isnum) {
         confirmBox.style.display = "block";
-        details.innerHTML = "You are booking a mentoring session on "+selectedDate+" at "+selectedTime+":00, at the "+selectedLibrary+" library.<br><br>Your contact details are: <br>Name: "+clientName+"<br>Phone Number: "+clientNumber; 
+        details.innerHTML = "You are booking a mentoring session on "+selectedDate+" at "+selectedTime+":00, at the "+selectedLibrary+" Library.<br><br>Your contact details are: <br>Name: "+clientName+"<br>Phone Number: "+clientNumber; 
     
     } else {
         alert("Please ensure all details have been entered correctly before confirming.");
@@ -134,5 +144,10 @@ function bookSession() {
 }
 
 function bookingCheck(response) {
-    alert(response);
+    if (response == "Session Booked Successfully!") {
+        document.getElementById("buttonDiv").style.display = "none";
+        document.getElementById("bookedDiv").style.display = "block";
+    } else {
+        alert(response);
+    }
 }
