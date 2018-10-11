@@ -26,7 +26,7 @@ function populateList(response) {
 
     for (var i = 0; i < libraries.length; i++) {
         currentLibrary = libraries[i].library;
-        librarySelect.innerHTML += "<option value="+currentLibrary+">"+currentLibrary+" Library</option>";
+        librarySelect.innerHTML += "<option value='"+currentLibrary+"'>"+currentLibrary+" Library</option>";
     }
 }
 
