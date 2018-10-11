@@ -35,7 +35,7 @@ include 'php/navbar.php';
 
 
 <script src="js/scripts.js"></script>
-<script src="js/interactionscript.js"></script>
+<script src="js/viewsessions.js"></script>
 
 </div>
 
