@@ -32,19 +32,19 @@
 					header("location: ../loginV2.php?login=fail");
 				}else{
 					//USER IS A MENTOR
-					header("location: ../statistics.php");
+					header("location: ../viewSessions.php");
 					$_SESSION["username"] = $username;
 				}
 				
 			}else{
 				//USER IS A STAFF MEMBER
-				header("location: ../statistics.php");
+				header("location: ../viewSessions.php");
 				$_SESSION["username"] = $username;
 			}
 			
 		}else{
 			//USER IS AN ADMIN
-			header("location: ../statistics.php");
+			header("location: ../viewSessions.php");
 			$_SESSION["username"] = $username;
 		}
 		
