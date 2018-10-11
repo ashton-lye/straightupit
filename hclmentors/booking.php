@@ -50,10 +50,15 @@ include 'php/navbar.php';
 
         <div class="confirmBoxContent">
             <h2>Booking Confirmation</h2>
-            <p id="bookingDetails"></p>
-            <p>If these details are correct, click 'Book Session' to book your mentoring session. Otherwise, click 'Cancel' to go back and edit the details.</p>
-            <button id="bookButton" onclick="Javascript:bookSession()">Book Session</button>
-            <button id="cancelButton" onclick="Javascript:closeConfirm()">Cancel</button>
+            <div id="buttonDiv">
+                <p id="bookingDetails"></p>
+                <p>If these details are correct, click 'Book Session' to book your mentoring session. Otherwise, click 'Cancel' to go back and edit the details.</p>
+                <button id="bookButton" onclick="Javascript:bookSession()">Book Session</button>
+                <button id="cancelButton" onclick="Javascript:closeConfirm()">Cancel</button>
+            </div>
+            <div id="bookedDiv">
+                <p>Your Session has been Booked! You can now close this page.</p>
+            </div>
         </div>
         
     </div>
