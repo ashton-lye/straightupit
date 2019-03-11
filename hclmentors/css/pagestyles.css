@@ -12,21 +12,65 @@ nav{
 	background-color: #78BE20;
 	height: 48px;
 }
-.pageContent {
-	display: inline-block;
-	width: 50%;
+
+
+
+
+
+
+
+/* Login page*/
+.login{
+	background-color: #46494E;
+	color: #FFFFFF;
+	text-align: center;
+	width:300px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 441px;
 }
+input[type="text"], input[type="password"], input[type="submit"]{
+	font-size: 16pt;
+	width: 85%;
+}
+.error{
+	color: #FF0000;
+}
+input[type="submit"]{
+	color: #FFFFFF;
+	background-color: #78BE20 ;
+	border: 1px solid #46494E;
+}
+input[type="submit"]:hover{
+	background-color: #BAB7B5 ;
+}
+.button{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+
+
+/* Footer */
 footer{
+	
 	background-color: #46494E; 
 	height: 100px;
 	color: #FFFFFF ;
 }
-
 .footer{
 	padding-top: 25px;
 	margin: auto ;
 	width: 50%;
 }
+
+
+
+
+
+
+
 aside ul{
 	list-style-type: none;
 	margin: 0;
@@ -49,8 +93,7 @@ aside ul li{
 	background-color: #BAB7B5 ;
 }
 aside{
-	margin-left: 15%;
-	float: left;
+	position: absolute;
 }
 .footer img{
 	float: right;

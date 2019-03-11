@@ -1,0 +1,47 @@
+/* Stats page*/
+.statistics {
+	margin: auto;
+	margin-bottom: 50px;
+	width: 70%;
+	height: content;
+}
+.mainArea{
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.panel{
+	flex: 1;
+	width: 48%;
+	margin-right: 10px;
+	background-color: #46494E;
+}
+.panel h3{
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.panel table{
+	background-color: #FFFFFF;
+	width: 100%;
+	border-collapse: collapse;
+}
+.panel table tr td, .panel table tr th{
+	border: 1px solid black;
+}
+.panel table tr td{
+	text-align:center;
+}
+.right{
+	float: right ;
+}
+.panel h2{
+	color: #FFFFFF;
+	text-align: center;
+	margin: 5px;
+}
+.innerPanel{
+	margin: 15px;
+}

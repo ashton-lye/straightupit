@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color:#f5f5f5;
+}
+
+#dateLibrary {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+#librarySelect {
+    margin-left: 10px;
+}
+#viewSession {
+    width: 80%;
+    margin: auto;
+}
+.mentorInteractions {
+    width: 80%;
+    margin: auto;
+}
+#sessions {
+    margin: auto;
+    padding: 100px;
+}
+#sessions:hover {
+    display: 'click ID';
+}
+h1,h2,h3 {
+    width: 80%;
+    margin: auto;
+}
+#sNotes {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 250px;
+}
+textarea {
+    width: 80%;
+}
+#moveFoot {
+    padding-bottom: 300px;
+}

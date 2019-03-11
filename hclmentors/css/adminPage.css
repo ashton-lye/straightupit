@@ -1,0 +1,82 @@
+div#box1,#box2{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 5px solid #78BE20;
+    width: 24%;
+    height: 40%;
+    padding: 1%;
+    margin: 0.30%;
+    overflow: auto;
+} 
+
+div#box3 {
+    box-sizing: border-box;
+    border: 5px solid #78BE20;
+    margin: 0.4%; 
+}
+
+div#box3 textarea {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    width: 50%;
+    height: 20%;
+}
+
+div#box3 p {
+    margin-left: 5%;
+}
+
+div#box3 input {
+    margin-left: 5%;
+}
+
+div#box3 h3 {
+    margin-left: 25%;
+}
+
+
+input, select {
+    height: 20%;
+    width: 100%;
+}
+
+p {
+    font-size: 110%;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+
+html {
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+
+div#confirmDiv {
+    box-sizing: border-box;
+    border: 5px solid #78BE20;
+    padding-bottom: 1%; 
+}
+
+div#confirmDiv p {
+    text-align: center;
+}
+
+div#confirmDiv button{
+    display: block;
+    margin: 0 auto;
+    height: 8%;
+    width: 20%;
+}
+
+div.content {
+    margin-left: 15%;
+    width: 70%;
+    height: 100%;
+    display: block;
+}

@@ -6,12 +6,14 @@ session_start();
   <head>
     <title>HCL Computer Mentoring</title>
     <meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/pagestyles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pagestyles.css"/>
   </head>
   <body>
-  <header>
   
-	  <img src="../images/HCLlogo.png" alt="HCL logo" class="headerImage">
+  <header>
+
+	  <img src="images/HCLlogo.png" alt="HCL logo" class="headerImage">
+
 	  
   
   </header>
